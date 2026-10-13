@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <title>Jesse Marsh | Legal Department Transformation</title>
 <meta name="description" content="Jesse Marsh helps corporate legal departments and law firms modernize across technology, process, talent, and AI.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +12,11 @@ body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg
 a{color:inherit}.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
 nav{position:sticky;top:0;z-index:10;background:rgba(11,26,51,.96)}
 nav .wrap{display:flex;justify-content:space-between;align-items:center;height:62px}
-.logo{color:#fff;font-weight:700;text-decoration:none;letter-spacing:.01em}.logo span{color:var(--gold)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.mono{width:38px;height:38px;flex:none;filter:drop-shadow(0 2px 6px rgba(0,0,0,.3))}
+.bname{color:#fff;font-size:1.02rem;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
+.bname .g{font-weight:400;color:#dfe6f2}.bname .f{font-weight:700;color:var(--gold2);margin-left:.15em}
+@media(max-width:520px){.bname{display:none}}
 nav ul{display:flex;gap:26px;list-style:none}nav ul a{color:#cdd5e3;text-decoration:none;font-size:.9rem}nav ul a:hover{color:var(--gold2)}
 .hero{color:#fff;padding:90px 0 100px;background:
  radial-gradient(circle at 85% 15%,rgba(60,100,170,.35),transparent 50%),
@@ -66,7 +71,7 @@ footer{background:var(--navy);color:#c3cde0;padding:70px 0 28px}footer h2{color:
 @media(max-width:860px){nav ul{display:none}.hero .wrap{grid-template-columns:1fr;text-align:center;gap:30px}.photo{margin:0 auto;width:200px;height:200px}.bar{margin:20px auto}.hero .pos{margin:0 auto}.ctas{justify-content:center}
 .rgrid,.tgrid,.extras,.about{grid-template-columns:1fr}section{padding:64px 0}}
 </style></head><body>
-<nav><div class="wrap"><a class="logo" href="#top">Jesse <span>Marsh</span></a>
+<nav><div class="wrap"><a class="brand" href="#top" aria-label="Jesse Marsh, home"><svg class="mono" viewBox="0 0 40 40" aria-hidden="true"><rect x="1.5" y="1.5" width="37" height="37" rx="9" fill="#0b1a33" stroke="#c9a24a" stroke-width="1.6"/><text x="20" y="26" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="16" font-weight="700" fill="#e2c47c" letter-spacing=".8">JM</text></svg><span class="bname"><span class="g">Jesse</span> <span class="f">Marsh</span></span></a>
 <ul><li><a href="#experience">Experience</a></li><li><a href="#recommendations">Recommendations</a></li><li><a href="#about">About</a></li><li><a href="#speaking">Speaking</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
 
 <header class="hero" id="top"><div class="wrap">

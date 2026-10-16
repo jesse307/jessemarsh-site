@@ -54,6 +54,12 @@ h2{font-size:clamp(1.8rem,3.6vw,2.4rem);color:var(--navy);margin:8px 0 14px;font
 .rec blockquote::before{content:"\201C";font-size:3.4rem;color:var(--gold);line-height:0;position:relative;top:22px;margin-right:4px}
 .rec .who{margin-top:18px;font-weight:700;color:var(--navy)}.rec .title{color:var(--muted);font-size:.86rem}
 .rec.wide{grid-column:1/-1}
+.rec.featured{background:linear-gradient(120deg,var(--navy),var(--navy2));border-left:4px solid var(--gold);padding:38px 42px;position:relative}
+.rec.featured blockquote{color:#e4eaf4;font-size:1.02rem}.rec.featured blockquote p+p{margin-top:12px}
+.rec.featured blockquote::before{display:block;height:18px}
+.rec.featured .who{color:var(--gold2)}.rec.featured .title{color:#aebbd2}
+.badge{position:absolute;top:18px;right:22px;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);background:var(--gold);padding:4px 10px;border-radius:999px}
+
 .about{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:start}
 .about p{color:#39414f;margin-bottom:16px;font-size:1.03rem}
 .facts{background:var(--navy);color:#dfe6f2;border-radius:12px;padding:30px}
@@ -68,7 +74,7 @@ h2{font-size:clamp(1.8rem,3.6vw,2.4rem);color:var(--navy);margin:8px 0 14px;font
 .jetcard .ic{font-size:1.6rem;color:var(--gold)}.jetcard b{color:var(--navy)}
 footer{background:var(--navy);color:#c3cde0;padding:70px 0 28px}footer h2{color:#fff}
 .small{border-top:1px solid rgba(255,255,255,.1);margin-top:50px;padding-top:20px;font-size:.8rem;color:#8593ab;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-@media(max-width:860px){nav ul{display:none}.hero .wrap{grid-template-columns:1fr;text-align:center;gap:30px}.photo{margin:0 auto;width:200px;height:200px}.bar{margin:20px auto}.hero .pos{margin:0 auto}.ctas{justify-content:center}
+@media(max-width:860px){.rec.featured{padding:46px 24px 28px}nav ul{display:none}.hero .wrap{grid-template-columns:1fr;text-align:center;gap:30px}.photo{margin:0 auto;width:200px;height:200px}.bar{margin:20px auto}.hero .pos{margin:0 auto}.ctas{justify-content:center}
 .rgrid,.tgrid,.extras,.about{grid-template-columns:1fr}section{padding:64px 0}}
 </style></head><body>
 <nav><div class="wrap"><a class="brand" href="#top" aria-label="Jesse Marsh, home"><svg class="mono" viewBox="0 0 40 40" aria-hidden="true"><rect x="1.5" y="1.5" width="37" height="37" rx="9" fill="#0b1a33" stroke="#c9a24a" stroke-width="1.6"/><text x="20" y="26" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="16" font-weight="700" fill="#e2c47c" letter-spacing=".8">JM</text></svg><span class="bname"><span class="g">Jesse</span> <span class="f">Marsh</span></span></a>
@@ -106,6 +112,10 @@ footer{background:var(--navy);color:#c3cde0;padding:70px 0 28px}footer h2{color:
 <div class="eyebrow">Recommendations</div><h2>What colleagues say</h2><div class="rule"></div>
 <p class="lead">A few recommendations from people I've worked with, shared from LinkedIn.</p>
 <div class="rgrid">
+<div class="rec wide featured"><span class="badge">Former manager</span><blockquote><p>I had the absolute pleasure of having Jesse on my team, and I can honestly say he is one of those rare individuals who makes a lasting impact on everyone fortunate enough to work with him.</p>
+<p>What makes him truly special is not just his talent and natural leadership ability, but the genuine passion, kindness, and heart he brings to everything he does. He consistently puts customers first, approaches every challenge with a collaborative spirit, and goes out of his way to support, encourage, and mentor those around him.</p>
+<p>He leads with empathy, integrity, and authenticity, earning the trust and respect of colleagues and customers alike. His passion for making a difference is contagious, and his ability to bring out the best in others is something I have always admired.</p>
+<p>Beyond being an exceptional professional, he is simply a wonderful human being. Any organization would be incredibly lucky to have him, and I would welcome the opportunity to work alongside him again in a heartbeat. I cannot recommend him highly enough!</p></blockquote><div class="who">Sherrie Hayes</div><div class="title">Innovator &amp; Leader | Driving Growth, Execution &amp; Results | Customer Advocate &amp; Strategist</div></div>
 <div class="rec"><blockquote>In my opinion, Jesse was the smartest and most open-minded salesperson at my company, which had a lot of smart and open-minded people. There are a lot of people in the legal industry who are resistant to change, but Jesse is a change-bringer. People who are looking for a younger, more creative spirit in their salesforce should give Jesse a serious look.</blockquote><div class="who">Nathan Cemenska JD-MBA</div><div class="title">Straight shooter who helps legal tech, law firms and corporate law departments do better</div></div>
 <div class="rec"><blockquote>As someone who runs a Client Success organization, I very much appreciated when Jesse was involved in bring a new client onboard as I was always confident they hadn't been oversold and promised things we couldn't deliver. Jesse was always willing to work through a successful handoff process, was clear and direct with his communication and happy to stay involved, as needed, to ensure the client relationship was successful. Jesse would be a strong addition to any sales team looking to grow and I don't hesitate for a second to recommend him.</blockquote><div class="who">Matt Serlin</div><div class="title">Client Success &amp; Operations Leader at Abion</div></div>
 <div class="rec wide"><blockquote>I worked with Jesse at DISCO. Every Customer Success Manager loved to work with him. When I asked him why, I was told it's because Jesse is a true partner. He would take the time to meet with each person on his account team to set goals for each of his clients. He would collaborate with others to create a vision. He made sure that all the people around him were empowered to lead in the areas where they should lead. Lastly, Jesse is quick to share success with others. This is a talent that a lot of sales people don't possess, and it's the thing that creates high performers. Jesse is constantly a high-performer. I hope our paths cross again.</blockquote><div class="who">Kristie Willis</div><div class="title">Legal Tech Customer Success Professional</div></div>

@@ -1,164 +1,262 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <title>Jesse Marsh | Legal Department Transformation</title>
 <meta name="description" content="Jesse Marsh helps corporate legal departments and law firms modernize across technology, process, talent, and AI.">
+<link rel="canonical" href="https://jessemarsh.com/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#f8f6f1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c1524" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jessemarsh.com/">
+<meta property="og:title" content="Jesse Marsh | Legal Department Transformation">
+<meta property="og:description" content="Jesse Marsh helps corporate legal departments and law firms modernize across technology, process, talent, and AI.">
+<meta property="og:image" content="https://jessemarsh.com/headshot.jpg">
+<meta property="og:image:alt" content="Headshot of Jesse Marsh">
+<meta name="twitter:card" content="summary">
+<script>(function(r){r.classList.add('js');var t=null;try{t=new URLSearchParams(location.search).get('theme')}catch(e){}if(t!=='light'&&t!=='dark'){t=null;try{t=localStorage.getItem('theme')}catch(e){}}if(t==='light'||t==='dark')r.setAttribute('data-theme',t)})(document.documentElement)</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#0b1a33;--navy2:#142a52;--gold:#c9a24a;--gold2:#e2c47c;--ink:#1c2333;--muted:#5a6476;--bg:#f6f7fa;--line:#e3e7ee}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
-a{color:inherit}.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-nav{position:sticky;top:0;z-index:10;background:rgba(11,26,51,.96)}
-nav .wrap{display:flex;justify-content:space-between;align-items:center;height:62px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.mono{width:38px;height:38px;flex:none;filter:drop-shadow(0 2px 6px rgba(0,0,0,.3))}
-.bname{color:#fff;font-size:1.02rem;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
-.bname .g{font-weight:400;color:#dfe6f2}.bname .f{font-weight:700;color:var(--gold2);margin-left:.15em}
-@media(max-width:520px){.bname{display:none}}
-nav ul{display:flex;gap:26px;list-style:none}nav ul a{color:#cdd5e3;text-decoration:none;font-size:.9rem}nav ul a:hover{color:var(--gold2)}
-.hero{color:#fff;padding:90px 0 100px;background:
- radial-gradient(circle at 85% 15%,rgba(60,100,170,.35),transparent 50%),
- linear-gradient(120deg,var(--navy) 0%,var(--navy2) 100%);position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;opacity:.18;background-image:radial-gradient(#8fa8d6 1px,transparent 1px);background-size:34px 34px}
-.hero .wrap{position:relative;display:grid;grid-template-columns:280px 1fr;gap:56px;align-items:center}
-.photo{width:280px;height:280px;border-radius:50%;object-fit:cover;border:4px solid var(--gold);box-shadow:0 20px 50px rgba(0,0,0,.35)}
-.hero h1{font-size:clamp(2.5rem,5.5vw,3.8rem);font-weight:800;line-height:1.1}
-.bar{width:64px;height:3px;background:var(--gold);margin:20px 0}
-.hero .pos{font-size:clamp(1.1rem,2.2vw,1.35rem);color:#dfe6f2;max-width:620px}
-.pillars{color:#b9c5da;margin-top:14px;font-size:1rem}.pillars b{color:var(--gold);margin:0 6px}
-.cert{color:var(--gold);font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-top:14px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:6px;font-weight:600;text-decoration:none;transition:.2s;font-size:.95rem}
-.btn-gold{background:var(--gold);color:var(--navy)}.btn-gold:hover{background:var(--gold2)}
-.btn-line{border:1.5px solid var(--gold);color:var(--gold2)}.btn-line:hover{background:rgba(201,162,74,.12)}
-.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-section{padding:88px 0}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;font-weight:700}
-h2{font-size:clamp(1.8rem,3.6vw,2.4rem);color:var(--navy);margin:8px 0 14px;font-weight:800}
-.rule{width:52px;height:3px;background:var(--gold);margin-bottom:30px}
-.lead{color:var(--muted);max-width:740px;font-size:1.05rem}
-.timeline{position:relative;margin-top:40px;padding-left:34px}
-.timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:var(--line)}
-.job{position:relative;margin-bottom:34px}
-.job::before{content:"";position:absolute;left:-32px;top:6px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--gold)}
-.job.now::before{background:var(--gold)}
-.job .when{font-size:.82rem;color:var(--gold);font-weight:700;letter-spacing:.04em}
-.job h3{font-size:1.12rem;color:var(--navy)}.job .org{color:var(--muted);font-weight:500}
-.job p{color:var(--muted);font-size:.95rem;max-width:760px;margin-top:4px}
-.extras{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
-.mini{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px}.mini h4{color:var(--navy);font-size:.95rem;margin-bottom:4px}.mini p{color:var(--muted);font-size:.9rem}
-.recs{background:#fff}
-.rgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:36px}
-.rec{background:var(--bg);border-radius:12px;padding:30px;border-left:4px solid var(--gold);display:flex;flex-direction:column}
-.rec blockquote{color:#2c3446;font-size:.97rem;flex:1;position:relative}
-.rec blockquote::before{content:"\201C";font-size:3.4rem;color:var(--gold);line-height:0;position:relative;top:22px;margin-right:4px}
-.rec .who{margin-top:18px;font-weight:700;color:var(--navy)}.rec .title{color:var(--muted);font-size:.86rem}
-.rec.wide{grid-column:1/-1}
-.rec.featured{background:linear-gradient(120deg,var(--navy),var(--navy2));border-left:4px solid var(--gold);padding:38px 42px;position:relative}
-.rec.featured blockquote{color:#e4eaf4;font-size:1.02rem}.rec.featured blockquote p+p{margin-top:12px}
-.rec.featured blockquote::before{display:block;height:18px}
-.rec.featured .who{color:var(--gold2)}.rec.featured .title{color:#aebbd2}
-.badge{position:absolute;top:18px;right:22px;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);background:var(--gold);padding:4px 10px;border-radius:999px}
+:root{--bg:#f8f6f1;--bg-alt:#f1ede4;--surface:#fff;--ink:#14213a;--muted:#4d5666;--line:#e3ded2;--accent:#7d5a12;
+--band:#0f1d36;--gold:#c9a24a;--on-gold:#0f1d36;--sun:none;--moon:block;--head:60px;color-scheme:light;
+--serif:"Iowan Old Style",Charter,"Palatino Linotype",Palatino,Georgia,serif;--sans:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0c1524;--bg-alt:#0f1a2c;--surface:#14213a;--ink:#e8ebf1;--muted:#a9b3c4;--line:#24324d;--accent:#d8b765;--band:#111f38;--sun:block;--moon:none;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#0c1524;--bg-alt:#0f1a2c;--surface:#14213a;--ink:#e8ebf1;--muted:#a9b3c4;--line:#24324d;--accent:#d8b765;--band:#111f38;--sun:block;--moon:none;color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{font:400 1.0625rem/1.65 var(--sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit;text-underline-offset:.2em}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:1rem;top:-4rem;z-index:20;background:var(--surface);color:var(--ink);padding:.5rem 1rem;border-radius:6px}.skip:focus{top:.75rem}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.01em;line-height:1.15}
+h2{font-size:clamp(1.75rem,3.4vw,2.35rem);margin:.4rem 0 1rem}
+h3{font-size:1.15rem}
+.eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;font-weight:600}
+.lead{color:var(--muted);max-width:65ch;font-size:1.0625rem}
+section,footer{padding:88px 0;scroll-margin-top:var(--head)}
+.alt{background:var(--bg-alt)}
+.band{--ink:#eef1f6;--muted:#b4bfd1;--accent:#d8b765;--line:rgba(255,255,255,.14);background:var(--band);color:var(--ink)}
 
-.about{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:start}
-.about p{color:#39414f;margin-bottom:16px;font-size:1.03rem}
-.facts{background:var(--navy);color:#dfe6f2;border-radius:12px;padding:30px}
-.facts div{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.1)}.facts div:last-child{border:0}
-.facts strong{display:block;color:var(--gold2);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}
-.speak{background:linear-gradient(120deg,var(--navy),var(--navy2));color:#fff}
-.speak h2{color:#fff}.speak .lead{color:#c3cde0}
-.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:36px 0 32px}
-.speak-photo{margin:32px 0 0;max-width:760px}.speak-photo img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 15%;border-radius:12px;box-shadow:0 14px 34px rgba(0,0,0,.35)}.speak-photo figcaption{margin-top:10px;font-size:.85rem;color:#b9c5da}
-.topic{border:1px solid rgba(226,196,124,.35);border-radius:12px;padding:26px;background:rgba(255,255,255,.03)}
-.topic .n{color:var(--gold);font-weight:800;font-size:1.5rem}.topic h3{font-size:1.08rem;margin:6px 0 8px}.topic p{color:#b9c5da;font-size:.92rem}
-.jets{padding:40px 0}.jetcard{display:flex;gap:18px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 26px;color:var(--muted)}
-.jetcard .ic{font-size:1.6rem;color:var(--gold)}.jetcard b{color:var(--navy)}
-footer{background:var(--navy);color:#c3cde0;padding:70px 0 28px}footer h2{color:#fff}
-.small{border-top:1px solid rgba(255,255,255,.1);margin-top:50px;padding-top:20px;font-size:.8rem;color:#8593ab;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-@media(max-width:860px){.rec.featured{padding:46px 24px 28px}nav ul{display:none}.hero .wrap{grid-template-columns:1fr;text-align:center;gap:30px}.photo{margin:0 auto;width:200px;height:200px}.bar{margin:20px auto}.hero .pos{margin:0 auto}.ctas{justify-content:center}
-.rgrid,.tgrid,.extras,.about{grid-template-columns:1fr}section{padding:64px 0}}
+/* header */
+.site{position:sticky;top:0;z-index:10;background:var(--bg);background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.site .wrap{display:flex;align-items:center;gap:1.5rem;min-height:var(--head)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto}
+.mono{width:32px;height:32px;flex:none}
+.bname{font-size:.9rem;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}.bname b{font-weight:600;color:var(--accent)}
+.nav ul{display:flex;gap:1.5rem;list-style:none}
+.nav a{display:block;padding:.35rem 0;color:var(--muted);text-decoration:none;font-size:.875rem;font-weight:500;white-space:nowrap;box-shadow:inset 0 -2px 0 transparent;transition:color .2s,box-shadow .2s}
+.nav a:hover,.nav a[aria-current]{color:var(--ink)}.nav a[aria-current]{box-shadow:inset 0 -2px 0 var(--accent)}
+.toggle{flex:none;display:grid;place-items:center;width:36px;height:36px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--ink);cursor:pointer}
+.toggle:hover{border-color:var(--accent)}.toggle svg{width:18px;height:18px}.i-sun{display:var(--sun)}.i-moon{display:var(--moon)}
+
+/* buttons */
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:2rem}
+.btn{display:inline-flex;align-items:center;padding:.75rem 1.35rem;border-radius:6px;font-weight:600;font-size:.9375rem;text-decoration:none;border:1.5px solid var(--gold);transition:background .2s,color .2s}
+.btn-gold{background:var(--gold);color:var(--on-gold)}.btn-gold:hover{background:#dcbb6c;border-color:#dcbb6c}
+.btn-line{color:var(--accent);border-color:currentColor}.btn-line:hover{background:color-mix(in srgb,var(--accent) 10%,transparent)}
+
+/* hero */
+.hero{padding:80px 0 88px;background:radial-gradient(circle at 85% 10%,rgba(60,100,170,.28),transparent 55%),var(--band)}
+.hero .wrap{display:grid;gap:2rem;justify-items:start}
+.photo{width:168px;height:168px;border-radius:50%;object-fit:cover;border:3px solid var(--gold);box-shadow:0 18px 44px rgba(0,0,0,.35)}
+.hero h1{font-size:clamp(2.6rem,6vw,4rem);letter-spacing:-.02em}
+.pos{margin-top:1.25rem;font-size:clamp(1.1rem,2.1vw,1.3rem);line-height:1.55;max-width:38ch;color:var(--ink)}
+.pillars{display:flex;flex-wrap:wrap;gap:.25rem .75rem;margin-top:1.25rem;color:var(--muted);font-size:.95rem}.pillars span[aria-hidden]{color:var(--gold)}
+.cert{margin-top:.75rem;color:var(--accent);font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+
+/* experience */
+.timeline{list-style:none;margin-top:2.75rem;border-left:1px solid var(--line);margin-left:5px}
+.job{position:relative;padding:0 0 2.25rem 1.75rem;max-width:68ch}.job:last-child{padding-bottom:0}
+.job::before{content:"";position:absolute;left:-6px;top:.45rem;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.job.now::before{background:var(--accent)}
+.job .when{margin:0;font-size:.8125rem;font-weight:600;color:var(--accent);letter-spacing:.02em}
+.job h3{margin-top:.2rem}.org{font-family:var(--sans);font-size:.95rem;font-weight:500;color:var(--muted)}
+.job p{color:var(--muted);font-size:.975rem;margin-top:.4rem}
+.extras{display:grid;gap:1rem;margin-top:3rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.25rem 1.4rem}
+.card h3{font-family:var(--sans);font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:.35rem}.card p{color:var(--muted);font-size:.95rem}
+
+/* AI tools */
+.tools{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(9rem,1fr));gap:.75rem;margin-top:2.25rem}
+.tools li{display:flex;flex-direction:column;justify-content:center;min-height:5.25rem;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1rem 1.15rem;font-weight:600;transition:border-color .2s,transform .2s}
+.tools li:hover{border-color:var(--accent);transform:translateY(-2px)}
+.tools small{font-weight:400;font-size:.8125rem;color:var(--muted)}
+
+/* recommendations */
+.rgrid{display:grid;gap:1.25rem;margin-top:2.5rem}
+.rec{position:relative;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.75rem}
+.rec blockquote{flex:1;font-size:.975rem}.rec blockquote p+p{margin-top:.8rem}
+.rec blockquote::before{content:"\201C";display:block;height:1.6rem;font:600 3rem/1 var(--serif);color:var(--accent)}
+.who{margin-top:1.25rem;font-weight:600}.title{color:var(--muted);font-size:.85rem}
+.rec.featured{background:var(--band);border:0;padding:2.25rem 1.75rem}.rec.featured blockquote{font-size:1.02rem}
+.badge{position:absolute;top:1.25rem;right:1.25rem;font-size:.6875rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--on-gold);background:var(--gold);padding:.2rem .65rem;border-radius:999px}
+
+/* about */
+.about{display:grid;gap:2.5rem;margin-top:2rem}
+.about p{max-width:65ch;margin-bottom:1rem}
+.facts{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.5rem 1.5rem;align-self:start}
+.facts div{padding:.9rem 0;border-bottom:1px solid var(--line)}.facts div:last-child{border:0}
+.facts dt{color:var(--accent);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+
+/* speaking */
+.speak-grid{display:grid;gap:2.5rem;align-items:center}
+.speak-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 15%;border-radius:12px;box-shadow:0 14px 34px rgba(12,21,36,.18)}
+.speak-photo figcaption{margin-top:.6rem;font-size:.85rem;color:var(--muted)}
+.tgrid{list-style:none;display:grid;gap:1.25rem;margin-top:3rem;counter-reset:t}
+.topic{background:var(--surface);border:1px solid var(--line);border-top:2px solid var(--accent);border-radius:4px 4px 12px 12px;padding:1.5rem}
+.topic .n{font:600 1rem var(--serif);color:var(--accent)}.topic h3{margin:.4rem 0 .6rem}.topic p{color:var(--muted);font-size:.95rem}
+
+/* jets + footer */
+.jets{padding:0 0 88px}
+.jetcard{display:flex;gap:1rem;align-items:center;border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.5rem;color:var(--muted);font-size:.975rem}
+.jetcard .ic{font-size:1.4rem;color:var(--accent)}.jetcard b{color:var(--ink);font-weight:600}.jetcard a{color:var(--accent)}
+footer p{max-width:60ch;color:var(--muted)}
+.small{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.25rem;font-size:.8rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+
+/* reveal: hidden only when JS is running (.js set in <head>); no-JS sees everything */
+.js .reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}.js .reveal.in{opacity:1;transform:none}
+
+@media (max-width:759px){
+:root{--head:100px}
+.site .wrap{flex-wrap:wrap;gap:0 1rem;padding-top:.5rem}
+.nav{order:3;overflow-x:auto;scrollbar-width:none;margin:0 -20px;padding:0 20px;width:calc(100% + 40px)}.nav::-webkit-scrollbar{display:none}
+.nav ul{gap:1.25rem;padding-bottom:.25rem}
+section,footer{padding:64px 0}.jets{padding:0 0 64px}.hero{padding:56px 0 64px}
+}
+@media (max-width:400px){.bname{display:none}}
+@media (min-width:760px){
+.hero .wrap{grid-template-columns:auto 1fr;gap:3.5rem;align-items:center}.photo{width:240px;height:240px}
+.extras{grid-template-columns:repeat(2,1fr);max-width:720px}
+.rgrid{grid-template-columns:repeat(2,1fr)}.rec.wide{grid-column:1/-1}.rec.featured{padding:2.75rem 3rem}
+.about{grid-template-columns:1.5fr 1fr;gap:3.5rem}
+.speak-grid{grid-template-columns:1fr 1fr;gap:3.5rem}
+.tgrid{grid-template-columns:repeat(3,1fr)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}.js .reveal{opacity:1;transform:none}}
 </style></head><body>
-<nav><div class="wrap"><a class="brand" href="#top" aria-label="Jesse Marsh, home"><svg class="mono" viewBox="0 0 40 40" aria-hidden="true"><rect x="1.5" y="1.5" width="37" height="37" rx="9" fill="#0b1a33" stroke="#c9a24a" stroke-width="1.6"/><text x="20" y="26" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="16" font-weight="700" fill="#e2c47c" letter-spacing=".8">JM</text></svg><span class="bname"><span class="g">Jesse</span> <span class="f">Marsh</span></span></a>
-<ul><li><a href="#experience">Experience</a></li><li><a href="#recommendations">Recommendations</a></li><li><a href="#about">About</a></li><li><a href="#speaking">Speaking</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap">
+<a class="brand" href="#top" aria-label="Jesse Marsh, home"><svg class="mono" viewBox="0 0 40 40" aria-hidden="true"><rect x="1.5" y="1.5" width="37" height="37" rx="9" fill="#0b1a33" stroke="#c9a24a" stroke-width="1.6"/><text x="20" y="26" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="16" font-weight="700" fill="#e2c47c" letter-spacing=".8">JM</text></svg><span class="bname">Jesse <b>Marsh</b></span></a>
+<nav class="nav" aria-label="Sections"><ul><li><a href="#experience">Experience</a></li><li><a href="#ai">AI</a></li><li><a href="#recommendations">Recommendations</a></li><li><a href="#about">About</a></li><li><a href="#speaking">Speaking</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<button class="toggle" id="theme" type="button" aria-pressed="false" aria-label="Dark theme"><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg><svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+</div></header>
 
-<header class="hero" id="top"><div class="wrap">
-<img class="photo" src="headshot.jpg" alt="Headshot of Jesse Marsh">
+<main id="main">
+<section class="hero band" id="top"><div class="wrap">
+<img class="photo" src="headshot.jpg" width="240" height="240" fetchpriority="high" alt="Headshot of Jesse Marsh">
 <div>
-<h1>Jesse Marsh</h1><div class="bar"></div>
+<h1>Jesse Marsh</h1>
 <p class="pos">I help corporate legal departments and law firms rethink how legal work gets done, from technology and process to flexible talent, with AI strategy and governance as one part of the picture.</p>
-<div class="pillars">Technology<b>•</b>Process<b>•</b>Talent<b>•</b>AI</div>
-<div class="cert">AIGP | AI Governance Professional</div>
+<p class="pillars"><span>Technology</span><span aria-hidden="true">•</span><span>Process</span><span aria-hidden="true">•</span><span>Talent</span><span aria-hidden="true">•</span><span>AI</span></p>
+<p class="cert">AIGP | AI Governance Professional</p>
 <div class="ctas"><a class="btn btn-gold" href="https://www.linkedin.com/in/jesse-marsh-aigp-60048b35/" target="_blank" rel="noopener">Connect on LinkedIn</a><a class="btn btn-line" href="mailto:jesse@jessemarsh.com">Email me</a></div>
-</div></div></header>
-
-<section id="experience"><div class="wrap">
-<div class="eyebrow">Experience</div><h2>Over a decade in legal and corporate services</h2><div class="rule"></div>
-<p class="lead">I've spent my career working with legal teams: law firms, corporate legal departments, and the people who support them. Here's where I've been along the way.</p>
-<div class="timeline">
-<div class="job now"><div class="when">Feb 2026 – Present</div><h3>Director, Legal Transformation Solutions <span class="org">· Epiq</span></h3><p>I advise corporate legal departments and law firms on end-to-end transformation, including legal technology, process optimization, flexible legal talent, and AI strategy and governance. I'm also a member of Epiq's Copilot Champions group and build with Copilot Studio and Microsoft Foundry.</p></div>
-<div class="job"><div class="when">Apr 2023 – Apr 2025</div><h3>Regional Sales Director <span class="org">· Wolters Kluwer ELM Solutions</span></h3><p>Worked with legal operations and executive leaders on modernizing how they manage legal spend and matters.</p></div>
-<div class="job"><div class="when">Aug 2022 – Apr 2023</div><h3>Regional Sales Executive <span class="org">· DISCO</span></h3><p>Worked with Fortune 500 legal departments and AmLaw 200 firms in New York on eDiscovery. DISCO Expert Certified.</p></div>
-<div class="job"><div class="when">Jan 2020 – Aug 2022</div><h3>Senior Account Executive <span class="org">· GoDaddy Corporate Domains (formerly Brandsight)</span></h3><p>Joined Brandsight as an early sales hire and stayed through its acquisition by GoDaddy. Worked with IT, marketing, and legal leaders on domain and brand protection.</p></div>
-<div class="job"><div class="when">Nov 2018 – Jan 2020</div><h3>Director of US Corporate Sales <span class="org">· Gandi.net</span></h3><p>Led U.S. business development, working directly with the Paris-based COO on the U.S. go-to-market strategy.</p></div>
-<div class="job"><div class="when">Dec 2017 – Nov 2018</div><h3>Squad Commander &amp; Field Training Officer <span class="org">· St. Francis Hospital, Wilmington EMS</span></h3><p>Trained and evaluated new providers, part of 15 years of service as an EMT.</p></div>
-<div class="job"><div class="when">May 2011 – Dec 2017</div><h3>Law Firm Account Manager <span class="org">· CSC</span></h3><p>Started in customer service and worked up to managing law firm relationships in New York and Chicago, with a focus on corporate compliance, domain management, and brand protection.</p></div>
-</div>
-<div class="extras">
-<div class="mini"><h4>Education</h4><p>B.S., Organizational Leadership, University of Delaware</p></div>
-<div class="mini"><h4>Certification</h4><p>AIGP (AI Governance Professional), IAPP, 2026</p></div>
-<div class="mini"><h4>Building with AI</h4><p>Copilot Studio, Microsoft Foundry, Lovable, Claude Code, APIs, and MCP servers</p></div>
 </div></div></section>
 
-<section class="recs" id="recommendations"><div class="wrap">
-<div class="eyebrow">Recommendations</div><h2>What colleagues say</h2><div class="rule"></div>
+<section id="experience"><div class="wrap reveal">
+<p class="eyebrow">Experience</p><h2>Over a decade in legal and corporate services</h2>
+<p class="lead">I've spent my career working with legal teams: law firms, corporate legal departments, and the people who support them. Here's where I've been along the way.</p>
+<ol class="timeline">
+<li class="job now"><p class="when">Feb 2026 – Present</p><h3>Director, Legal Transformation Solutions <span class="org">· Epiq</span></h3><p>I advise corporate legal departments and law firms on end-to-end transformation, including legal technology, process optimization, flexible legal talent, and AI strategy and governance. I'm also a member of Epiq's Copilot Champions group and build with Copilot Studio and Microsoft Foundry.</p></li>
+<li class="job"><p class="when">Apr 2023 – Apr 2025</p><h3>Regional Sales Director <span class="org">· Wolters Kluwer ELM Solutions</span></h3><p>Worked with legal operations and executive leaders on modernizing how they manage legal spend and matters.</p></li>
+<li class="job"><p class="when">Aug 2022 – Apr 2023</p><h3>Regional Sales Executive <span class="org">· DISCO</span></h3><p>Worked with Fortune 500 legal departments and AmLaw 200 firms in New York on eDiscovery. DISCO Expert Certified.</p></li>
+<li class="job"><p class="when">Jan 2020 – Aug 2022</p><h3>Senior Account Executive <span class="org">· GoDaddy Corporate Domains (formerly Brandsight)</span></h3><p>Joined Brandsight as an early sales hire and stayed through its acquisition by GoDaddy. Worked with IT, marketing, and legal leaders on domain and brand protection.</p></li>
+<li class="job"><p class="when">Nov 2018 – Jan 2020</p><h3>Director of US Corporate Sales <span class="org">· Gandi.net</span></h3><p>Led U.S. business development, working directly with the Paris-based COO on the U.S. go-to-market strategy.</p></li>
+<li class="job"><p class="when">Dec 2017 – Nov 2018</p><h3>Squad Commander &amp; Field Training Officer <span class="org">· St. Francis Hospital, Wilmington EMS</span></h3><p>Trained and evaluated new providers, part of 15 years of service as an EMT.</p></li>
+<li class="job"><p class="when">May 2011 – Dec 2017</p><h3>Law Firm Account Manager <span class="org">· CSC</span></h3><p>Started in customer service and worked up to managing law firm relationships in New York and Chicago, with a focus on corporate compliance, domain management, and brand protection.</p></li>
+</ol>
+<div class="extras">
+<div class="card"><h3>Education</h3><p>B.S., Organizational Leadership, University of Delaware</p></div>
+<div class="card"><h3>Certification</h3><p>AIGP (AI Governance Professional), IAPP, 2026</p></div>
+</div></div></section>
+
+<section class="alt" id="ai"><div class="wrap reveal">
+<p class="eyebrow">Building with AI</p><h2>What I build with</h2>
+<p class="lead">I find the best way to understand something is to build with it. In my spare time I build AI tools and small projects of my own.</p>
+<ul class="tools">
+<li>Copilot Studio</li>
+<li>Microsoft Foundry</li>
+<li>Lovable</li>
+<li>Claude Code</li>
+<li>APIs</li>
+<li>MCP servers</li>
+</ul>
+</div></section>
+
+<section id="recommendations"><div class="wrap reveal">
+<p class="eyebrow">Recommendations</p><h2>What colleagues say</h2>
 <p class="lead">A few recommendations from people I've worked with, shared from LinkedIn.</p>
 <div class="rgrid">
-<div class="rec wide featured"><span class="badge">Former manager</span><blockquote><p>I had the absolute pleasure of having Jesse on my team, and I can honestly say he is one of those rare individuals who makes a lasting impact on everyone fortunate enough to work with him.</p>
+<figure class="rec wide featured band"><span class="badge">Former manager</span><blockquote><p>I had the absolute pleasure of having Jesse on my team, and I can honestly say he is one of those rare individuals who makes a lasting impact on everyone fortunate enough to work with him.</p>
 <p>What makes him truly special is not just his talent and natural leadership ability, but the genuine passion, kindness, and heart he brings to everything he does. He consistently puts customers first, approaches every challenge with a collaborative spirit, and goes out of his way to support, encourage, and mentor those around him.</p>
 <p>He leads with empathy, integrity, and authenticity, earning the trust and respect of colleagues and customers alike. His passion for making a difference is contagious, and his ability to bring out the best in others is something I have always admired.</p>
-<p>Beyond being an exceptional professional, he is simply a wonderful human being. Any organization would be incredibly lucky to have him, and I would welcome the opportunity to work alongside him again in a heartbeat. I cannot recommend him highly enough!</p></blockquote><div class="who">Sherrie Hayes</div><div class="title">Innovator &amp; Leader | Driving Growth, Execution &amp; Results | Customer Advocate &amp; Strategist</div></div>
-<div class="rec"><blockquote>In my opinion, Jesse was the smartest and most open-minded salesperson at my company, which had a lot of smart and open-minded people. There are a lot of people in the legal industry who are resistant to change, but Jesse is a change-bringer. People who are looking for a younger, more creative spirit in their salesforce should give Jesse a serious look.</blockquote><div class="who">Nathan Cemenska JD-MBA</div><div class="title">Straight shooter who helps legal tech, law firms and corporate law departments do better</div></div>
-<div class="rec"><blockquote>As someone who runs a Client Success organization, I very much appreciated when Jesse was involved in bring a new client onboard as I was always confident they hadn't been oversold and promised things we couldn't deliver. Jesse was always willing to work through a successful handoff process, was clear and direct with his communication and happy to stay involved, as needed, to ensure the client relationship was successful. Jesse would be a strong addition to any sales team looking to grow and I don't hesitate for a second to recommend him.</blockquote><div class="who">Matt Serlin</div><div class="title">Client Success &amp; Operations Leader at Abion</div></div>
-<div class="rec wide"><blockquote>I worked with Jesse at DISCO. Every Customer Success Manager loved to work with him. When I asked him why, I was told it's because Jesse is a true partner. He would take the time to meet with each person on his account team to set goals for each of his clients. He would collaborate with others to create a vision. He made sure that all the people around him were empowered to lead in the areas where they should lead. Lastly, Jesse is quick to share success with others. This is a talent that a lot of sales people don't possess, and it's the thing that creates high performers. Jesse is constantly a high-performer. I hope our paths cross again.</blockquote><div class="who">Kristie Willis</div><div class="title">Legal Tech Customer Success Professional</div></div>
-<div class="rec"><blockquote>I had the great pleasure of meeting Jesse in a training environment. While days on end in a small room learning new things via slideware isn't most folks time to shine, here is what made my first of impression of Jesse unique. His questions. It was clear from moment one that Jesse had a skill for asking questions to expose gaps, to highlight challenges, and to help me (as the instructor mind you) see what I hadn't seen before. His genuine nature coupled with this highly tuned discovery skillset not only helped me be a better instructor, but also served him in his ramp learning new technology, buyers and pain points. As anyone who has chosen a career in Sales knows, it's is the power of the question coupled with a genuine interest in the answer that makes all the difference!</blockquote><div class="who">Jane Maranhas</div><div class="title">Vice President Global Client Solutions at KLDiscovery</div></div>
-<div class="rec"><blockquote>I had the privilege of working alongside and being mentored by Jesse during my time at DISCO. His guidance was instrumental in my professional growth. His insightful advice, hands-on support, and willingness to share knowledge created a positive and enriching learning experience. I am grateful for the impact he has had (and still to this day has) on my career.</blockquote><div class="who">Abigail Baxter</div><div class="title">Senior Customer Success Manager @ Epiq</div></div>
+<p>Beyond being an exceptional professional, he is simply a wonderful human being. Any organization would be incredibly lucky to have him, and I would welcome the opportunity to work alongside him again in a heartbeat. I cannot recommend him highly enough!</p></blockquote><figcaption><div class="who">Sherrie Hayes</div><div class="title">Innovator &amp; Leader | Driving Growth, Execution &amp; Results | Customer Advocate &amp; Strategist</div></figcaption></figure>
+<figure class="rec"><blockquote>In my opinion, Jesse was the smartest and most open-minded salesperson at my company, which had a lot of smart and open-minded people. There are a lot of people in the legal industry who are resistant to change, but Jesse is a change-bringer. People who are looking for a younger, more creative spirit in their salesforce should give Jesse a serious look.</blockquote><figcaption><div class="who">Nathan Cemenska JD-MBA</div><div class="title">Straight shooter who helps legal tech, law firms and corporate law departments do better</div></figcaption></figure>
+<figure class="rec"><blockquote>As someone who runs a Client Success organization, I very much appreciated when Jesse was involved in bring a new client onboard as I was always confident they hadn't been oversold and promised things we couldn't deliver. Jesse was always willing to work through a successful handoff process, was clear and direct with his communication and happy to stay involved, as needed, to ensure the client relationship was successful. Jesse would be a strong addition to any sales team looking to grow and I don't hesitate for a second to recommend him.</blockquote><figcaption><div class="who">Matt Serlin</div><div class="title">Client Success &amp; Operations Leader at Abion</div></figcaption></figure>
+<figure class="rec wide"><blockquote>I worked with Jesse at DISCO. Every Customer Success Manager loved to work with him. When I asked him why, I was told it's because Jesse is a true partner. He would take the time to meet with each person on his account team to set goals for each of his clients. He would collaborate with others to create a vision. He made sure that all the people around him were empowered to lead in the areas where they should lead. Lastly, Jesse is quick to share success with others. This is a talent that a lot of sales people don't possess, and it's the thing that creates high performers. Jesse is constantly a high-performer. I hope our paths cross again.</blockquote><figcaption><div class="who">Kristie Willis</div><div class="title">Legal Tech Customer Success Professional</div></figcaption></figure>
+<figure class="rec"><blockquote>I had the great pleasure of meeting Jesse in a training environment. While days on end in a small room learning new things via slideware isn't most folks time to shine, here is what made my first of impression of Jesse unique. His questions. It was clear from moment one that Jesse had a skill for asking questions to expose gaps, to highlight challenges, and to help me (as the instructor mind you) see what I hadn't seen before. His genuine nature coupled with this highly tuned discovery skillset not only helped me be a better instructor, but also served him in his ramp learning new technology, buyers and pain points. As anyone who has chosen a career in Sales knows, it's is the power of the question coupled with a genuine interest in the answer that makes all the difference!</blockquote><figcaption><div class="who">Jane Maranhas</div><div class="title">Vice President Global Client Solutions at KLDiscovery</div></figcaption></figure>
+<figure class="rec"><blockquote>I had the privilege of working alongside and being mentored by Jesse during my time at DISCO. His guidance was instrumental in my professional growth. His insightful advice, hands-on support, and willingness to share knowledge created a positive and enriching learning experience. I am grateful for the impact he has had (and still to this day has) on my career.</blockquote><figcaption><div class="who">Abigail Baxter</div><div class="title">Senior Customer Success Manager @ Epiq</div></figcaption></figure>
 </div>
-<div class="ctas"><a class="btn btn-line" style="color:var(--navy)" href="https://www.linkedin.com/in/jesse-marsh-aigp-60048b35/" target="_blank" rel="noopener">Read more on LinkedIn</a></div>
+<div class="ctas"><a class="btn btn-line" href="https://www.linkedin.com/in/jesse-marsh-aigp-60048b35/" target="_blank" rel="noopener">Read more on LinkedIn</a></div>
 </div></section>
 
-<section id="about"><div class="wrap">
-<div class="eyebrow">About Me</div><h2>A little more about me</h2><div class="rule"></div>
+<section class="alt" id="about"><div class="wrap reveal">
+<p class="eyebrow">About Me</p><h2>A little more about me</h2>
 <div class="about"><div>
-<p>I grew up in Delaware and earned my degree in Organizational Leadership at the University of Delaware. Today I live in Sparta, New Jersey, with my wife and our two young kids. Family comes first for me, and most of my time outside work is spent with them.</p>
+<p>I grew up in Delaware and earned my degree in Organizational Leadership at the University of Delaware. Today I live in Sparta, New Jersey. Family comes first for me, and most of my time outside work is spent with them.</p>
 <p>I've always found meaning in helping others, whether that's advocating for a client or serving my community. For more than 15 years I've volunteered as an EMT, including time as a squad commander training new providers. That work taught me to stay calm, listen carefully, and look after the people around me.</p>
-<p>I care about building consensus and mutual respect with the people I work with, colleagues and clients alike. Outside of legal tech, I have a real passion for aviation, and I'm curious about technology. In my spare time I build AI tools and small projects of my own, because I find the best way to understand something is to build with it.</p>
+<p>I care about building consensus and mutual respect with the people I work with, colleagues and clients alike. Outside of legal tech, I love aviation, and I'm curious about technology. In my spare time I build AI tools and small projects of my own, because I find the best way to understand something is to build with it.</p>
 </div>
-<div class="facts">
-<div><strong>Roots</strong>Delaware native</div>
-<div><strong>Home</strong>Sparta, New Jersey</div>
-<div><strong>Family</strong>Wife and two young kids</div>
-<div><strong>Service</strong>15+ years as a volunteer EMT</div>
-<div><strong>Off the clock</strong>Aviation, building AI tools and side projects</div>
-</div></div></div></section>
+<dl class="facts">
+<div><dt>Roots</dt><dd>Delaware native</dd></div>
+<div><dt>Home</dt><dd>Sparta, New Jersey</dd></div>
+<div><dt>Service</dt><dd>15+ years as a volunteer EMT</dd></div>
+<div><dt>Off the clock</dt><dd>Aviation, building AI tools and side projects</dd></div>
+</dl></div></div></section>
 
-<section class="speak" id="speaking"><div class="wrap">
-<div class="eyebrow">Speaking</div><h2>Speaking</h2><div class="rule"></div>
+<section id="speaking"><div class="wrap reveal">
+<div class="speak-grid"><div>
+<p class="eyebrow">Speaking</p><h2>Speaking</h2>
 <p class="lead">Over more than a decade of working with legal teams, I've learned that the things that matter most aren't on a slide. They come down to how you treat people, how you handle the hard moments, and whether clients can trust you. I'm starting to share what I've learned, mistakes included, and I'd love to talk with your group about it.</p>
-<figure class="speak-photo"><img src="speaking.jpg" width="1024" height="992" loading="lazy" alt="Jesse Marsh speaking to a room of legal and tech professionals"><figcaption>Leading a session</figcaption></figure>
-<div class="tgrid">
-<div class="topic"><div class="n">01</div><h3>What a Career in Sales Taught Me</h3><p>Lessons from going from customer service to sales leadership, working with law firms and legal departments. It's about listening first, asking better questions, and learning from the deals that didn't go your way.</p></div>
-<div class="topic"><div class="n">02</div><h3>Partner, Not Vendor: Building Relationships the Right Way</h3><p>Why honesty, never overselling, and sharing credit build trust that lasts. How consensus and mutual respect with clients and colleagues lead to better outcomes for everyone.</p></div>
-<div class="topic"><div class="n">03</div><h3>Staying Steady Under Pressure</h3><p>What more than 15 years as an EMT and the ups and downs of a sales career taught me about staying calm, looking after the people around you, and getting back up after setbacks.</p></div>
+<div class="ctas"><a class="btn btn-gold" href="mailto:jesse@jessemarsh.com?subject=Speaking%20inquiry">Invite me to speak</a></div>
 </div>
-<a class="btn btn-gold" href="mailto:jesse@jessemarsh.com?subject=Speaking%20inquiry">Invite me to speak</a>
+<figure class="speak-photo"><img src="speaking.jpg" width="1024" height="992" loading="lazy" decoding="async" alt="Jesse Marsh speaking to a room of legal and tech professionals"><figcaption>Leading a session</figcaption></figure>
+</div>
+<ol class="tgrid">
+<li class="topic"><span class="n">01</span><h3>What a Career in Sales Taught Me</h3><p>Lessons from going from customer service to sales leadership, working with law firms and legal departments. It's about listening first, asking better questions, and learning from the deals that didn't go your way.</p></li>
+<li class="topic"><span class="n">02</span><h3>Partner, Not Vendor: Building Relationships the Right Way</h3><p>Why honesty, never overselling, and sharing credit build trust that lasts. How consensus and mutual respect with clients and colleagues lead to better outcomes for everyone.</p></li>
+<li class="topic"><span class="n">03</span><h3>Staying Steady Under Pressure</h3><p>What more than 15 years as an EMT and the ups and downs of a sales career taught me about staying calm, looking after the people around you, and getting back up after setbacks.</p></li>
+</ol>
 </div></section>
 
-<section class="jets"><div class="wrap"><div class="jetcard"><span class="ic">✈</span><div>I also work as a <b>Senior Flight Advisor with Stratos Jets</b>, helping clients arrange private jet charter. <a href="https://www.stratosjets.com/find-your-agency/joel-thomas/jesse-marsh/" target="_blank" rel="noopener">View my Stratos Jets page</a>.</div></div></div></section>
+<section class="jets" aria-label="Private jet charter"><div class="wrap"><div class="jetcard"><span class="ic" aria-hidden="true">✈</span><div>I also work as a <b>Senior Flight Advisor with Stratos Jets</b>, helping clients arrange private jet charter. <a href="https://www.stratosjets.com/find-your-agency/joel-thomas/jesse-marsh/" target="_blank" rel="noopener">View my Stratos Jets page</a>.</div></div></div></section>
+</main>
 
-<footer id="contact"><div class="wrap">
-<div class="eyebrow">Contact</div><h2>Let's connect</h2><div class="rule"></div>
-<p style="max-width:640px">Whether it's legal transformation, AI, speaking, or just a good conversation, I'd like to hear from you.</p>
+<footer class="band" id="contact"><div class="wrap">
+<p class="eyebrow">Contact</p><h2>Let's connect</h2>
+<p>Whether it's legal transformation, AI, speaking, or just a good conversation, I'd like to hear from you.</p>
 <div class="ctas"><a class="btn btn-gold" href="mailto:jesse@jessemarsh.com">jesse@jessemarsh.com</a><a class="btn btn-line" href="https://www.linkedin.com/in/jesse-marsh-aigp-60048b35/" target="_blank" rel="noopener">LinkedIn</a></div>
 <div class="small"><span>© 2026 Jesse Marsh · Sparta, NJ</span><span>Views are my own and do not represent any employer.</span></div>
 </div></footer>
+
+<script>
+(()=>{const d=document,r=d.documentElement,b=d.getElementById('theme'),mq=matchMedia('(prefers-color-scheme: dark)');
+const metas=d.querySelectorAll('meta[name="theme-color"]');
+const cur=()=>{const t=r.getAttribute('data-theme');return t==='light'||t==='dark'?t:(mq.matches?'dark':'light')};
+const sync=()=>{const t=cur();b.setAttribute('aria-pressed',t==='dark');metas.forEach(m=>m.content=t==='dark'?'#0c1524':'#f8f6f1')};
+b.onclick=()=>{const t=cur()==='dark'?'light':'dark';r.setAttribute('data-theme',t);try{localStorage.setItem('theme',t)}catch(e){}sync()};
+mq.addEventListener&&mq.addEventListener('change',sync);sync();
+const els=[...d.querySelectorAll('.reveal')],show=el=>el.classList.add('in');
+const io='IntersectionObserver'in window;
+if(!io||matchMedia('(prefers-reduced-motion: reduce)').matches)els.forEach(show);
+else{const rv=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){show(e.target);rv.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+els.forEach(el=>{const q=el.getBoundingClientRect();q.top<innerHeight&&q.bottom>0?show(el):rv.observe(el)})}
+if(!io)return;
+const links=new Map([...d.querySelectorAll('.nav a')].map(a=>[a.hash.slice(1),a]));
+const mark=id=>links.forEach((a,k)=>k===id?a.setAttribute('aria-current','true'):a.removeAttribute('aria-current'));
+const spy=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&mark(e.target.id)),{rootMargin:'-40% 0px -55% 0px'});
+d.querySelectorAll('main section[id],footer[id]').forEach(s=>spy.observe(s));
+addEventListener('scroll',()=>{if(innerHeight+scrollY>=d.body.scrollHeight-4)mark('contact')},{passive:true});
+})();
+</script>
 </body></html>
